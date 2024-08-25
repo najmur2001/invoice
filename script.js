@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Example data object
     const invoiceData = {
         seller: {
-            name: "Najmur Corp Pvt Ltd",
+            name: "ABC Corp",
             address1: "265,Shri Lakshmi PG,2nd cross",
             address2: "Neeladri Nagar,Electronics city",
             phone: "+91 9564982496",
@@ -39,19 +39,19 @@ document.addEventListener("DOMContentLoaded", function() {
             deliveryDate: "27-08-2024"
         },
         items: [
-            { sku: "A111", name: "T Shirt", description: "Women's Tall - M", qty: 10, unitPrice: 10.00, total: 100.00 },
-            { sku: "B222", name: "Shirt", description: "Men's Tall - M", qty: 5, unitPrice: 20.00, total: 100.00 },
-            { sku: "C333", name: "Jeans", description: "Children's - S", qty: 10, unitPrice: 5.00, total: 50.00 },
-            { sku: "D444", name: "Shoes", description: "Men's - XL", qty: 5, unitPrice: 10.00, total: 50.00 }
+            { sku: "A111", name: "T Shirt", description: "Women's Tall - M", qty: 2, unitPrice: 1000.00, total: 2000.00 },
+            { sku: "B222", name: "Shirt", description: "Men's Tall - M", qty: 5, unitPrice: 500.00, total: 2500.00 },
+            { sku: "C333", name: "Jeans", description: "Children's - S", qty: 10, unitPrice: 500.00, total: 5000.00 },
+            { sku: "D444", name: "Shoes", description: "Men's - XL", qty: 5, unitPrice: 200.00, total: 1000.00 }
         ],
         totals: {
-            subtotal: 300.00,
+            subtotal: 10500.00,
             discount: 0.00,
-            subtotalLessDiscount: 300.00,
-            cgst: 15.00,
-            sgst: 15.00,
-            shipping: 0.00,
-            grandTotal: 330.00
+            subtotalLessDiscount: 10500.00,
+            cgst: 525.00,
+            sgst: 525.00,
+            shipping: 50.00,
+            grandTotal: 11600.00
         },
         instructions: "Handle with care."
     };
