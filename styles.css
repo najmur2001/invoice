@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.invoice-container {
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    
+}
+
+h4 {
+    margin-top: 0;
+}
+
+/* Sales and Order Section */
+.sales-and-order {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.sales-and-order > div {
+    width: 45%;
+}
+
+.sales-and-order p {
+    margin: 5px 0;
+}
+
+.sales-and-order .order-info p {
+    text-align: center;
+}
+
+
+/* Bill and Shipping Section */
+.bill-and-shipping {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.bill-and-shipping > div {
+    width: 45%;
+}
+
+.bill-and-shipping h4 {
+    margin-bottom: 10px;
+}
+
+.bill-and-shipping p {
+    margin: 5px 0;
+}
+.bill-and-shipping .shipping-info p{
+    text-align: left;
+
+}
+
+/* Additional Info Section */
+.additional-info {
+    margin-bottom: 20px;
+    
+}
+
+.additional-info p {
+    margin: 5px 0;
+    
+}
+
+.po-sales-ship, .shipping-method-terms {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.po-sales-ship div, .shipping-method-terms div {
+    width: 24%;
+}
+
+/* Order Details Table */
+.order-details {
+    margin-bottom: 20px;
+}
+
+#order-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#order-table th, #order-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#order-table th {
+    background-color: #f4f4f4;
+}
+
+/* Totals Section */
+.totals {
+    border-top: 2px solid #000;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+.totals p {
+    margin: 5px 0;
+}
+
+.instructions-and-discount {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sales-and-order, .bill-and-shipping {
+        flex-direction: column;
+    }
+    
+    .sales-and-order > div, .bill-and-shipping > div {
+        width: 100%;
+    }
+    
+    .additional-info {
+        margin: 0;
+    }
+
+    .po-sales-ship, .shipping-method-terms {
+        flex-direction: column;
+    }
+
+    .po-sales-ship div, .shipping-method-terms div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <br>
+    <div class="invoice-container">
+        <h4 style="text-align: center;">SALES ORDER</h4>
+        <div class="sales-and-order">
+            <div class="seller-info">
+                <p id="seller-name">Seller Company Name</p>
+                <p id="seller-address1">Seller Address Line 1</p>
+                <p id="seller-address2">Seller Address Line 2</p>
+                <p id="seller-phone">Seller Phone 1</p>
+                <p id="seller-email">Seller Email Address</p>
+                <p id="seller-contact">Seller Point of Contact</p>
+            </div>
+
+            <div>
+
+            </div>
+
+            <div class="order-info">
+                <p><strong>ORDER DATE</strong> </p>
+                <p><span id="order-date">01-18-2022</span></p>
+                <p><strong>SALES ORDER NO.</strong> </p>
+                <p><span id="order-no">A246</span></p>
+                <p><strong>CUSTOMER NO.</strong> </p>
+                <p><span id="customer-no">114H</span></p>
+            </div>
+        </div>
+        <div class="bill-and-shipping">
+            <div class="bill-to">
+                <h4>BILL TO</h4>
+                <p id="bill-name">Company Name</p>
+                <p id="bill-address">123 Main Street</p>
+                <p id="bill-city">Hamilton, OH 44416</p>
+                <p id="bill-phone">(321) 456-7890</p>
+                <p id="bill-email">Email Address</p>
+            </div>
+
+            <div>
+
+            </div>
+
+            <div class="shipping-info">
+                <h4 style="text-align: justify;">SHIP TO</h4>
+                <p id="ship-name">Company Name</p>
+                <p id="ship-address">123 Main Street</p>
+                <p id="ship-city">Hamilton, OH 44416</p>
+                <p id="ship-phone">(321) 456-7890</p>
+                <p id="ship-email">Email Address</p>
+            </div>
+        </div>
+
+        <div class="additional-info">
+            <!-- <div class="po-sales-ship">
+                <p><strong>P.O NO.:</strong> </p>
+                <p><span id="po-no">XXXYYYZZZ</span></p>
+                <p><strong>SALES PERSON:</strong> </p>
+                <p><span id="sales-person">Brian Lee</span></p>
+                <p><strong>SHIP VIA:</strong> </p>
+                <span id="ship-via">DLF</span>
+                <p><strong>SHIPPING DATE:</strong> </p>
+                <span id="shipping-date">01-20-2022</span>
+            </div> -->
+
+
+            <div class="po-sales-ship">
+                <div>
+                    <p><strong>P.O NO.</strong> </p>
+                <p><span id="po-no">XXXYYYZZZ</span></p>
+                </div>
+                <div>
+                    <p><strong>SALES PERSON</strong> </p>
+                <p><span id="sales-person">Brian Lee</span></p>
+                </div>
+                <div>
+                    <p><strong>SHIP VIA</strong> </p>
+                <span id="ship-via">DLF</span>
+                </div>
+                <div>
+                    <p><strong>SHIPPING DATE</strong> </p>
+                <span id="shipping-date">01-20-2022</span>
+                </div>
+            </div>
+
+            <div class="shipping-method-terms">
+                <div>
+                    <p><strong>SHIPPING METHOD</strong> </p>
+                <span id="shipping-method">Airline</span>
+                </div>
+                <div>
+                    <p><strong>SHIPPING TERMS</strong> </p>
+                <span id="shipping-terms">Arranged by Seller</span>
+                </div>
+                <div>
+                    <p><strong>PAYMENT TERMS</strong> </p>
+                <span id="payment-terms">NET 30</span>
+                </div>
+                <div>
+                    <p><strong>EST. DELIVERY DATE</strong> </p>
+                <span id="delivery-date"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-details">
+            <table id="order-table">
+                <thead>
+                    <tr>
+                        <th>ITEM SKU</th>
+                        <th>ITEM NAME</th>
+                        <th>DESCRIPTION</th>
+                        <th>QTY</th>
+                        <th>UNIT PRICE</th>
+                        <th>TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be added dynamically -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="totals">
+            <div class="instructions-and-discount">
+                <p><strong>Special Instructions:</strong> </p>
+                <!-- <p><span id="instructions"></span></p> -->
+            </div>
+
+            <div>
+                <p><strong>SUBTOTAL:</strong> $<span id="subtotal" ></span></p>
+                <p><strong>DISCOUNT:</strong> $<span id="discount"></span></p>
+                <p><strong>SUBTOTAL LESS DISCOUNT:</strong> $<span id="subtotal-less-discount"></span></p>
+                <p><strong>CGST (5%):</strong> $<span id="cgst"></span></p>
+                <p><strong>SGST (5%):</strong> $<span id="sgst"></span></p>
+                <p><strong>SHIPPING/HANDLING:</strong> $<span id="shipping"></span></p>
+                <p><strong>GRAND TOTAL:</strong> $<span id="grand-total"></span></p>
+            </div>
+
+        </div>
+
+        
+    </div>
+    <br>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
