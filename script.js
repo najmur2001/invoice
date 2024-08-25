@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Example data object
     const invoiceData = {
         seller: {
-            name: "ABC Corp",
+            name: "Najmur Pvt Ltd",
             address1: "265,Shri Lakshmi PG,2nd cross",
             address2: "Neeladri Nagar,Electronics city",
             phone: "+91 9564982496",
