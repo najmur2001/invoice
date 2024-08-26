@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
             contact: "Najmur Hossain"
         },
         order: {
-            date: "01-18-2022",
+            date: "26-08-2024",
             number: "A246",
             customerNumber: "114H"
         },
